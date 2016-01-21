@@ -11,7 +11,6 @@ var map = new L.Map('map', {
 	layers: [Esri_WorldGrayCanvas]
 });	
 
-console.log(map);
 
 var currentYear = {}
 var lastYear = {}
@@ -36,10 +35,7 @@ function addLayerByYear(yearVal) {
 
   	if (addressData.features[i].properties.year == yearVal) {
 
-      console.log('first');
-
       if (lastYear[addressData.features[i].properties._id]) {
-        console.log('second')
 
         var movingMarker = L.Marker.movingMarker(
                         [lastYear[addressData.features[i].properties._id],
@@ -53,7 +49,6 @@ function addLayerByYear(yearVal) {
 
 
       } else {
-        console.log('third');
 
         markerList.push(L.marker([
             addressData.features[i].geometry.coordinates[1],
