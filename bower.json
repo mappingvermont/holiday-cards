@@ -1,0 +1,35 @@
+{
+  "name": "holiday-cards",
+  "description": "holiday cards map",
+  "main": "script.js",
+  "dependencies": {
+    "leaflet": "~0.7.2",
+    "Leaflet.MovingMarker": "~0.0.1"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "ignore": [
+    "examples",
+    "LICENSE",
+    ".jshintrc",
+    "**/*.txt",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "*.md",
+    ".gitattributes",
+    "bower.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.0",
+  "homepage": "https://github.com/mappingvermont/holidayCards",
+  "authors": [
+    "mappingvermont <charlie.hofmann@gmail.com>"
+  ],
+  "moduleType": [],
+  "private": true
+}

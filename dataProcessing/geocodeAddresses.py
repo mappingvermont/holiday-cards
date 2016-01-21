@@ -7,9 +7,9 @@ import csv
 from geopy import geocoders
 from collections import defaultdict
 
-baseDir = r'/home/charlie/Proj-15/holidayCards/dataProcessing'
-inputCSV = os.path.join(baseDir, 'inputAddresses.csv')
-outGeoJSON = os.path.join(baseDir, 'addresses.geojson')
+baseDir = r'/home/charlie/Proj-15/holidayCards'
+inputCSV = os.path.join(baseDir, 'dataProcessing', 'inputAddresses.csv')
+outGeoJSON = os.path.join(baseDir, 'data', 'addresses.geojson')
 
 featList = []
 
@@ -32,10 +32,20 @@ with open(inputCSV, 'rb') as theFile:
             coords = geojson.Point((0, 0))
             print addressText
 
-        propDict = {'human': row[1], 'year': int(row[6])}
+        propDict = {
+                    '_id': int(row[0]),
+                    'human': row[1],
+                    'address': row[2],
+                    'city': row[3],
+                    'state': row[4],
+                    'zip': row[5],
+                    'year': int(row[6])
+                    }
 
         featureStr = geojson.Feature(properties=propDict, geometry=coords)
         featList.append(featureStr)
+
+        print addressText
 
     outFC = geojson.FeatureCollection(featList)
 
