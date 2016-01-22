@@ -1,77 +1,67 @@
-
-
 var Esri_WorldGrayCanvas = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-	maxZoom: 16
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+    maxZoom: 16
 });
 
 var map = new L.Map('map', {
-	center: new L.LatLng(35,-90),
-	zoom: 4,
-	layers: [Esri_WorldGrayCanvas]
-});	
-
+    center: new L.LatLng(35, -90),
+    zoom: 4,
+    layers: [Esri_WorldGrayCanvas]
+});
 
 var currentYear = {}
 var lastYear = {}
 
-$.getJSON('data/addresses.geojson', function(data) {
-	addressData = data
-	addLayerByYear(2013)
-});
-
-function onEachFeature(feature, layer) {
-        layer.bindPopup(feature.properties.human);
-}
+addLayerByYear(2013);
 
 function addLayerByYear(yearVal) {
 
+    lastYear = currentYear
+    currentYear = {}
+    markerList = []
 
-  lastYear = currentYear
-  currentYear = {}
-  markerList = []
+    for (i in addresses) {
 
-  for (i=0; i < addressData.features.length; i++) {
+        if (addresses[i][yearVal]) {
 
-  	if (addressData.features[i].properties.year == yearVal) {
+            if (lastYear[i]) {
+                console.log(addresses[i]);
 
-      if (lastYear[addressData.features[i].properties._id]) {
+                var movingMarker = L.Marker.movingMarker(
+                    [
+                        lastYear[i],
+                        addresses[i][yearVal]
+                    ], [5000], {
+                        autostart: true
+                    }
+                ).bindPopup(addresses[i]['popupText']);
+                markerList.push(movingMarker);
 
-        var movingMarker = L.Marker.movingMarker(
-                        [lastYear[addressData.features[i].properties._id],
-                        [
-                          addressData.features[i].geometry.coordinates[1], 
-                          addressData.features[i].geometry.coordinates[0]
-                          ]
-                        ], [5000], {autostart: true}
-                        ).bindPopup(addressData.features[i].properties.human);
-        markerList.push(movingMarker);
+            } else {
 
+                markerList.push(L.marker(
+                    addresses[i][yearVal]
+                ).bindPopup(addresses[i]['popupText']));
 
-      } else {
+            }
 
-        markerList.push(L.marker([
-            addressData.features[i].geometry.coordinates[1],
-            addressData.features[i].geometry.coordinates[0]
-            ]).bindPopup(addressData.features[i].properties.human));
-      }
+            currentYear[i] = addresses[i][yearVal]
 
+        }
 
-      currentYear[addressData.features[i].properties._id] = [addressData.features[i].geometry.coordinates[1], addressData.features[i].geometry.coordinates[0]]
+    }
 
-  	}
-  	
-  }
+    console.log(markerList);
 
-  myLayer = L.layerGroup(markerList).addTo(map);
-
+    myLayer = L.layerGroup(markerList).addTo(map);
 }
+
 
 function sliderControl(yearVal) {
 
-  console.log(yearVal);
-  
-  map.removeLayer(myLayer);
-  
-  addLayerByYear(yearVal);
+    console.log(yearVal);
+
+    map.removeLayer(myLayer);
+
+    addLayerByYear(yearVal);
 }
