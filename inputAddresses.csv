@@ -47,7 +47,7 @@ ID,Recipient,Address,City,State,ZIP,Year
 55,Kip in Illinois,PO Box 254,Lowden,IA,52255,2015
 54,LaMoy,20 Joy Drive #205,Burlington,VT,05403,2015
 56,Lanan,1546 Lower Pleasant Valley Rd,Cambridge,VT,05444,2015
-20,Langfitts,3360 16th St NW Apt 1,Washington,DC,20010,2015
+20,Dan,3360 16th St NW Apt 1,Washington,DC,20010,2015
 57,Langwig,2000 Stone Place Apt 2224,Melrose,MA,02176,2015
 58,Laurel Wickberg,"55 Revere St, Apt 9",Boston,MA,02114,2015
 59,Lefrak,1762 U St NW,Washington,DC,20009,2015
@@ -58,7 +58,7 @@ ID,Recipient,Address,City,State,ZIP,Year
 63,Maya G,2642 W Haddon Ave,Chicago,IL,60622,2015
 64,Mclean,PO Box 58,Gallupville,NY,12073,2015
 65,Mikaela's Becky,2480 16th St NW,Washington,DC,20009,2015
-66,Mitts,,NY,NY,10012,2015
+66,Mitts,250 W 99 St. Apt 4A,NY,NY,10012,2015
 67,Mulls,1814 Liberty St,El Cerrito,CA,94530,2015
 69,Naresh,39 Dunmore Ln,Williston,VT,05495,2015
 70,Nick F,759 East Hill Rd,Richmond,VT,05477,2015
@@ -81,7 +81,7 @@ ID,Recipient,Address,City,State,ZIP,Year
 92,Stacey S,6478 Westminster West Rd,Putney,VT,05346,2015
 93,Stephen Pope,4 Crane Pl,Medfield,MA,02052,2015
 94,Stickneys,The Putney School,Putney,VT,05346,2015
-95,Tombergs,102 Deep Root Dr,Westminster,VT,05158,2015
+95,Tomberg,102 Deep Root Dr,Westminster,VT,05158,2015
 14,Trapper Byrne,1013 Dyer Dr,Lafayette,CA,94549,2015
 96,Winchell,437 Maple Run Ln,Stowe,VT,05672,2015
 97,Yasaswi,178 42nd St,Pittsburgh,PA,15201,2015
@@ -128,10 +128,10 @@ ID,Recipient,Address,City,State,ZIP,Year
 53,Katie and Jon,29 Pleasant St,Montpelier,VT,05602,2014
 54,LaMoy,1049 Sandy Birch Rd,Milton,VT,05468,2014
 56,Lanan,1546 Lower Pleasant Valley Rd,Cambridge,VT,05444,2014
-20,Langfitt fam,132 Eastland Avenue,Rochester,NY,14618,2014
+20,Dan,3360 16th St NW Apt 1,Washington,DC,20010,2014
 57,Langwig,208 1st St,Santa Cruz,CA,95060,2014
 58,Laurel Wickberg,17 Orris St,Newton,MA,02466,2014
-59,Lefrak,1101 brook valley lane,Mclean,VA,22102,2014
+59,Lefrak,1101 Brook Valley Lane,Mclean,VA,22102,2014
 60,Lisenby's,857-B Macarthur Ave,SF,CA,94129,2014
 61,Lubes,926 Spaight Street,Madison,WI,53703,2014
 62,Margie and Owen,Shampeny Hill Rd,Hancock,VT,05748,2014
@@ -155,14 +155,14 @@ ID,Recipient,Address,City,State,ZIP,Year
 85,Robin Major,c/o Patch Farm,Westminster West,VT,05346,2014
 86,Robyn and Lloyd,95 E. State St,Montpelier,VT,05602,2014
 87,Roz,BP 19,Sokone,Senegal,West Africa,2014
-84,Salls,105 County Route 43,Argyle,NY,12809,2014
+84,Salls,2218 E 8th St.,Davis,CA,95618,2014
 89,Sharon Rotax,20 Davis Rd,Hinesburg,VT,05461,2014
 90,Sheldon and Matt,1577 Campus Drive,Berkeley,CA,94708,2014
 91,Skyler,1526 Pine Valley Blvd #1,Ann Arbor,MI,48104,2014
 92,Stacey S,5 West St,Bellows Falls,VT,05101,2014
 93,Stephen Pope,540 S Willard St,Burlington,VT,05401,2014
 94,Stickneys,The Putney School,Putney,VT,05346,2014
-95,Tombergs,102 Deep Root Dr,Westminster,VT,05158,2014
+95,Tomberg,102 Deep Root Dr,Westminster,VT,05158,2014
 96,Winchell,437 Maple Run Ln,Stowe,VT,05672,2014
 2,540 FAM,540 S Willard St,Burlington,VT,05401,2013
 1,Adranga,2420 16th St NW Apt 702,Washington,DC,20009,2013
@@ -175,13 +175,13 @@ ID,Recipient,Address,City,State,ZIP,Year
 13,Bryar's,,Grafton,VT,05146,2013
 14,Byrne,1013 Dyer Dr,Lafayette,CA,94549,2013
 16,CFrost,638 Lawton Street,SF,CA,94122,2013
-17,Chasse fam,1705-A Brooks st,SF,CA,94129,2013
+17,Chasse fam,1216 Ralston Avenue,SF,CA,94129,2013
 18,Cindy Major,,San Rafael,CA,94901,2013
 19,Claire G,23 Buttercup Lane,Westminster West,VT,05346,2013
 20,Dan,3360 16th St. NW,Washington,DC,20010,2013
-22,Dan and Grace,Plateau Dr,Berlin,VT,05602,2013
+22,Dan and Grace,66 Plateau Dr,Berlin,VT,05602,2013
 23,David H,770 Robinson Cemetery Rd,Maple Corner,VT,05648,2013
-11,Del,Fitch Rd,East Montpelier,VT,05602,2013
+11,Del,450 Fitch Rd,East Montpelier,VT,05602,2013
 21,Diane Cushman,20 Mountain View St,Bristol,VT,05443,2013
 25,Ellie Baker,PO Box 494,Norridgewock,ME,04957,2013
 29,Ense,2701 W 43rd St. ,Minneapolis,MN,55410,2013
@@ -212,7 +212,7 @@ ID,Recipient,Address,City,State,ZIP,Year
 67,Mulls,1814 Liberty St,El Cerrito,CA,94530,2013
 68,Nick M,18 Butler St,Waterbury,VT,05676,2013
 73,OB,8 Stuart Street,Medfield,MA,02052,2013
-74,Olen,310 mountain ave,Sonoma,CA,95476,2013
+74,Olen,310 Mountain Ave,Sonoma,CA,95476,2013
 76,Paul G,64 West Central Street,Natick,MA,01760,2013
 78,PHIL,1722 S. Carson Ave.,Tulsa,OK,74119,2013
 80,Phil Zalinger,140 Main Street,Montpelier,VT,05602,2013
@@ -225,5 +225,5 @@ ID,Recipient,Address,City,State,ZIP,Year
 90,Sheldon and Matt,1577 Campus Drive,Berkeley,CA,94708,2013
 92,Stacey S,"5 West St",Bellows Falls,VT,05101,2013
 94,Stickneys,The Putney School,Putney,VT,05346,2013
-95,Tombergs,22 Morgan St,Bellows Falls,VT,05101,2013
+95,Tomberg,22 Morgan St,Bellows Falls,VT,05101,2013
 58,Wickbergs,Hartley Hill Rd,Saxtons River,VT,05154,2013
