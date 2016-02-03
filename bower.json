@@ -3,7 +3,7 @@
   "description": "holiday cards map",
   "main": "script.js",
   "dependencies": {
-    "Leaflet.MovingMarker": "~0.0.1"
+    "Leaflet.MovingMarker": ""
   },
   "devDependencies": {},
   "license": "MIT",
