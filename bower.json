@@ -3,7 +3,6 @@
   "description": "holiday cards map",
   "main": "script.js",
   "dependencies": {
-    "leaflet": "~0.7.2",
     "Leaflet.MovingMarker": "~0.0.1"
   },
   "devDependencies": {},
@@ -26,7 +25,7 @@
     "tests"
   ],
   "version": "0.0.0",
-  "homepage": "https://github.com/mappingvermont/holidayCards",
+  "homepage": "https://github.com/mappingvermont/holiday-cards",
   "authors": [
     "mappingvermont <charlie.hofmann@gmail.com>"
   ],
